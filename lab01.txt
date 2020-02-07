@@ -1,1 +1,5 @@
 Lab01
+
+1.1 b. i. Function
+      ii. These objects are dictionaries
+     iii. The mechanism is recursive. This is because the achieve_all() function calls
