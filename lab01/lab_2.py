@@ -15,7 +15,7 @@ problem = {
     'goal': ['space on b', 'b on table', 'space on a', 'a on table', 'space on c', 'c on table'],
 
     'initial2': ['space on b', 'b on table', 'space on a', 'a on table', 'space on c', 'c on table'],
-    'goal2': ['space on a', 'a on b', 'b on c', 'c on table', 'space on table'],
+    'goal2': ['space on c', 'c on b', 'b on a', 'a on table', 'space on table'],
     'actions': [
         {
             'action': 'move a from b to c',
@@ -300,21 +300,21 @@ problem = {
 if __name__ == '__main__':
 
     # This turns on detailed logging for the GPS "thought" process.
-    # logging.basicConfig(level=logging.DEBUG)
+    logging.basicConfig(level=logging.DEBUG)
 
     # Use GPS to solve the problem formulated above.
-    actionSequence = gps(
-        problem['initial'],
-        problem['goal'],
-        problem['actions']
-    )
-
-    # Print the solution, if there is one.
-    if actionSequence is not None:
-        for action in actionSequence:
-            print(action)
-    else:
-        print('plan failure...')
+    # actionSequence = gps(
+    #     problem['initial'],
+    #     problem['goal'],
+    #     problem['actions']
+    # )
+    #
+    # # Print the solution, if there is one.
+    # if actionSequence is not None:
+    #     for action in actionSequence:
+    #         print(action)
+    # else:
+    #     print('plan failure...')
 
     actionSequence = gps(
         problem['initial2'],
