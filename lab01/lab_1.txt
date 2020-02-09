@@ -18,9 +18,9 @@ lab_1
          iii. The code could be said to be artificially intelligent because it is attempting to be a rationally thinking
               program. It takes states, actions, and goals and finds a rational way to get from the start to the end.
           iv. A monkey who solves this probelem would be intelligent because they would not only have to solve the
-	          order of operations problem, but they would have to interpret the situation, observe what different
-	          objects are, manipulate objects, move themselves, and many more tasks that require intelligence to
-	          solve the problem that the GPS algorithm doesn't have to and can't do.
+	      order of operations problem, but they would have to interpret the situation, observe what different
+	      objects are, manipulate objects, move themselves, and many more tasks that require intelligence to
+              solve the problem that the GPS algorithm doesn't have to and can't do.
 
 
 
