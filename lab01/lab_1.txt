@@ -1,0 +1,26 @@
+lab_1
+
+1.1   b.   i. Function
+          ii. These objects are dictionaries
+         iii. The mechanism is recursive. This is because the achieve_all function calls the achieve function, which calls
+              the apply_operator function, which calls the achieve_all function. This loop can be broken by these
+              functions, but this loop calls itself making it recursive.
+
+      c.   i. The famous puzzle is the Monkeys and Bananas problem. In the problem, there is a monkey who can only
+              reach the bananas if he stands on a chair and waves a stick. The monkey can move around, carry things
+              around, reach for the bananas, and wave a stick in the air. The goal is to find the best moves to get
+              the bananas. This is not how the program is implemented. In the program, the monkey only neeeds to stand
+              on the chair and the monkey is also carrying a ball.
+          ii. The GPS program takes in the defined actions with their preconditions and effects and does a search
+              algorithm to find the final goal state. It works by setting the goal state and working backwards through
+              the preconditions to find a way to get to the initial condition. Once it reaches the initial condition,
+              it lists the actions that lead to the final goal state adn that is the solution.
+         iii. The code could be said to be artificially intelligent because it is attempting to be a rationally thinking
+              program. It takes states, actions, and goals and finds a rational way to get from the start to the end.
+          iv. A monkey who solves this probelem would be intelligent because they would not only have to solve the
+	      order of operations problem, but they would have to interpret the situation, observe what different
+	      objects are, manipulate objects, move themselves, and many more tasks that require intelligence to
+              solve the problem that the GPS algorithm doesn't have to and can't do.
+
+
+
