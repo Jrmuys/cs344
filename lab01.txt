@@ -1,8 +1,0 @@
-Lab01 - 02/7/2020
-CS 344
-Joel Muyskens
-
-1.1
-    b. i. function
-      ii. These objects are dictionaries
-     iii. Yes, it is recursive. The apply_operator
