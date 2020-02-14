@@ -1,0 +1,46 @@
+LAB02 - Report          |
+Author: Joel Muyskens   |
+Date: 02.14.2020        |
+=========================
+
+Exercise 2.1
+------------
+    a.  both of the search algorithms solve the problem. They both do equally well and achieve a value of 15.0 at the
+        end, no matter the start location.
+    b.  Simulated annealing takes longer because it makes lots of random moves to get to the maximum location,
+        whereas the hill-climbing algorithm just moves up the slope until it reaches the maximum value and then stops.
+    c.  The starting value for x doesn't make a difference in finding the correct solution, however, it does make a
+        difference in the time it takes, especially for the hill climbing algorithm because it needs to climb farther
+        to reach the peak (although in this scenario, not that much farther)
+    d.  Changing the delta value makes both algorithm take longer. For the hill climbing algorithm, the max value get
+        lots of decimal places because it can only go up by the delta value. Trying a number like 0.1 or 0.01 doesn't
+        come out with a even integer even though it should. I am guessing that has something to do with the way that
+        it is adding numbers. The hill climbing algorithm doesn't always find the maximum point if they delta is too
+        small, but will usually get pretty close to 15.
+    e.  The exp_schedule() method is the function that determines if the solution is accepted. It takes values that are
+        higher but this function allows some values that are lower.
+
+Exercise 2.2
+-------------
+    a.  Neither can 'solve' the problem because the solution is infinity. However, depending on what value of delta
+        used, the simulated annealing generally finds a better solution.
+    b.  The hill climbing algorithm will work more quickly (usually) because once it finds one of the peaks, it will
+        stop, however the simulated annealing algorithm will keep going until the temperature 'cools'.
+    c.  The starting value for x makes a huge difference for the hill climbing algorithm, this is because the hill
+        climbing algorithm can only go the the peak of whatever slope it starts on, so its final value is determined by
+        its starting location (unless it starts at a value of 0).
+    d.  Changing the delta step make a large difference for the simulated annealing algorithm because if the delta is
+        too small, it won't be able to make it out of the troughs and will be as stuck as the hill-climbing algorithm.
+        If the delta is large enough, it can find a better place to go next and generally can get a better value than
+        hill-climbing. For hill climbing, if the delta is large enough, it can jump to a higher peak. If delta is
+        specifically a multiple of pi (> pi ex. 3.14,31.4) it can jump (almost) perfectly to the next peak and find a
+        very good value (better than simulated annealing)
+    e.  The function (as stated) doesn't have lower and upper bounds. It will be able to find as high a value it can
+        in the time given. The minimum value is 0 because it uses the absolute value function. Assuming a normal delta
+        value (not anything huge or pi), the hill climbing algorithm will stay at 30 or lower for the value, and
+        simulated annealing will generally do so, but it can escape past 30 because it can jump to the next peak.
+
+Exercise 2.3
+------------
+
+
