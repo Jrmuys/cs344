@@ -52,22 +52,20 @@ if __name__ == '__main__':
         # print('Hill-climbing solution       x: ' + str(hill_solution)
         #       + '\tvalue: ' + str(p.value(hill_solution))
         #       )
-        hill_value = p.value(hill_solution)
-        if hill_value > max_hill:
-            max_hill = hill_value
+        max_hill += p.value(hill_solution)
+
 
         # Solve the problem using simulated annealing.
         annealing_solution = simulated_annealing(
             p,
             exp_schedule(k=20, lam=0.005, limit=1000)
         )
-        annealing_value = p.value(annealing_solution)
-        if annealing_value > max_annealing:
-            max_annealing = annealing_value
+        max_annealing += p.value(annealing_solution)
+
 
         # print('Simulated annealing solution x: ' + str(annealing_solution)
         #       + '\tvalue: ' + str(p.value(annealing_solution))
         #       )
 
-    print('Hill climbing maximum value: ' + str(max_hill))
-    print('Simulated annealing maximum value: ' + str(max_annealing))
+    print('Hill climbing average value: ' + str(max_hill / 100))
+    print('Simulated annealing average value: ' + str(max_annealing / 100))

@@ -42,5 +42,26 @@ Exercise 2.2
 
 Exercise 2.3
 ------------
+    a.  The hill climbing algorithm does well and generally makes it very close to 30, the simulated annealing
+        algorithm does consistently better and makes it to a value around 60 (with a delta of 1.8). This is because
+        the hill climbing algorithm will get a chance to start on most (usually every) peak of the function so it should
+        find something close to the max. The simulated annealing program also isn't hurt too much if it makes a bad
+        jump on a single run because only the best value is taken, so it does much better.
+    b.  The average value for hill climbing is around 14 and the average for simulated annealing is around 28.
+    c.  The simulated annealing program runs better because it is able to make it past the original constraints of the
+        starting locations and get out past 30. It also works better on average because it can leave the hill it started
+        on and get to a better location. Hill climbing is worse because it can't leave the hill it started on, although
+        random restarts improves the result a lot because it gets lots of tries.
 
+Exercise 2.4
+------------
+    a.  Beam search makes the most sense for simulated annealing because there's usually only one option for hill
+        climbing, so there's no need for a tree. For simulated annealing, the beam search makes sense because the it
+        takes advantage of good moves that were previously made.
+    b.  You could probably make it 10 to 15 or so layers meaning 2^10-2^15 answers in a couple of seconds, once you get
+        too many more layers it starts to take a very long time to solve and memory will start to fill up.
+    c.  I would need to choose a number of random start locations, then modify the simulated annealing program so that
+        I could run it in both directions and store those in a list, then look at the answers for all of the solutions
+        and run the program again on all of those solutions, and run that for a number of seconds until I get impatient
+        because for the sin function there is no goal state as it goes to infinity.
 
