@@ -1,0 +1,34 @@
+LAB02 - Report          |
+Author: Joel Muyskens   |
+Date: 02.14.2020        |
+=========================
+
+Exercise 3.1
+------------
+a.  For the solved puzzle, every algorithm worked to solve the problem in a timely manner.
+    For the easy puzzle (and for the hard ones), depth_first_search and min_conflics don't find a solution in a timely
+    manner. DFS is slow because the search space becomes very large for the sudoku problem and min_conflics doesn't work
+    well because it implements local search which doesn't do well if the solutions arn't spread out in the problem
+    space.ACM solves the easy problem but not anything after that because it doesn't do any backtracking, so if it gets
+    to a place where no moves can be made, it is stuck and fails. Backtracking search with the added parameters can
+    solve the problem because there is a very small (probably 1) solution for the problem, so backtracking search (if
+    it's a bit smarter) can accomplish the task because it doesn't fail when if finds something that doesn't work.
+
+b.  Configuring the settings for backtracking makes the backtracking algorithm work on the harder and hardest problems
+    and improves the search time for the easy problem. T
+    The inference parameter has a big effect on the effectiveness of the algorithm. The select_unassigned_variable
+    param doesn't have a noticeable effect on the program's runtime.
+
+Exercise 3.2
+------------
+a.  DFS: Fails for every value of n. This is possibly because of a bug with the implementation of the algorithm.
+    AC3: Fails for every value of n.
+    backtracking: n=25 is the largest value I had patience for. For the n queens problem, with larger values of n,
+                  the search has to do more and more moves to find a solution, which ends up taking a long time
+    min_conflicts: at n=2000 the algorithm starts to take more time to find a solution. min_conflicts works so well
+                   because in the n queens problem, the solutions are more spread out so local search is a great
+                   algorithm to use.
+b.  The mrv setting works the best for the n-queens problem. This is because this parameter limits the search space for
+    the algorithm and means that it can search deeper faster which is helpful for this problem. The inference doesn't
+    really help because the increased search space makes it take super long, and looking at the constraints doesn't
+    limit the search space much.
