@@ -32,3 +32,29 @@ b.  The mrv setting works the best for the n-queens problem. This is because thi
     the algorithm and means that it can search deeper faster which is helpful for this problem. The inference doesn't
     really help because the increased search space makes it take super long, and looking at the constraints doesn't
     limit the search space much.
+
+Exercise 3.3
+------------
+a.  A csp as defined by the aima program is:
+        variables   A list of variables
+        domains     A dictionary of possible values
+        neighbors   A dictionary of variables that lists the other variables that participate in constraints.
+        constraints A function f(A, a, B, b) that returns true if neighbors
+                    A, B satisfy the constraint when they have values A=a, B=b
+
+    A traditional search is defined by
+        start       A starting state
+        actions     A list of action to go from one state to another
+        domain      The states that can be reached by the actions (not usually explicitly defines)
+        goal        The state the program is searching for
+        results     The result from taking an action on a certain state
+
+    These two are similar in that they have domains and try to search for a possible solution, but the constraint
+    satisfaction search takes into account the constraints while searching for the solution and only considers
+    options that fit those constraints.
+
+b.  Heuristics for traditional and constraint based searches are similar because they both are used for complex problems
+    that require more help to guide them to the correct result faster. In min-conflicts, the heuristic of how many
+    conflicts the state has and picks a random variable to minimize conflicts with. This uses the constraints in the
+    heuristic to find a solution, where as a traditional search can only use a pre defined heuristic like the distance
+    to a location.
