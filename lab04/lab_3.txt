@@ -1,0 +1,34 @@
+a.
+    1.
+    P(user) = .089 -- from question
+
+    2.
+    P(test | user) = 0.99 -- from question
+
+    3.
+    P(¬test | user) = 1 - (test | user)
+                    = 1 - 0.990
+                    = .01
+
+    4.
+    P(test | ¬user) = 1 - P(¬test | ¬user)
+                    = 1 - 0.98
+                    = 0.02
+
+    5.
+    P(test) = P(user) * P(test | user) + P(¬user) * P(test | ¬user)
+            = 0.089 * 0.99 + 0.01 * 0.02
+            = .08831
+    P(user | test) = P(test | user) * P(user) / P(test)
+                   = 0.99 * 0.089 / 0.8831
+                   = 0.9977
+
+b.
+    P(test) = P(cancer) * P(test | cancer) + P(¬cancer) * P(test | ¬cancer)
+            = .01 * .8 + .99 * .096
+            = .10304
+    P(cancer | test) = P(test | cancer) * P(cancer) / P(test)
+                     = 0.80 * 0.01 / 0.10304
+                     = .07764
+
+    7.78% chance she has cancer, 92.2% chance she doesn't.
