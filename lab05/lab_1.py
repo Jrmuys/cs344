@@ -31,3 +31,16 @@ print(enumeration_ask('Burglary', dict(Alarm=T), burglary).show_approx())
 print("Compute P(Burglary | john ∧ mary)")
 # Compute P(Burglary | john ∧ mary)
 print(enumeration_ask('Burglary', dict(John=T, Mary=T), burglary).show_approx())
+
+"""
+These don't all match the exact inference algorithm because they are estimates. Rejection sampling is the worst
+performing on this data set, which takes a bunch of samples of the space and gives an estimate on those. The more
+samples taken the more accurate the response. 
+
+The second best is likelihood weighting, this is a smarter version of rejection sampling because it only generates 
+samples that are constant with the evidence in a certain problem. It is no surprise that this performs better than the 
+rejection sampling method. 
+The best performing approximate inference method is Gibbs sampling. This method keeps the evidence variables fixed and 
+randomly wanders around the sample space.
+This produces the most accurate results that are fairly close to the actual value of the problem.
+"""
