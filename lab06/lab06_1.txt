@@ -1,0 +1,29 @@
+=============================================
+= Yes No Yes Yes No Yes No Yes No No No Yes =   Since there are 6 yeses and 6 nos, the starting entropy = 1
+=============================================
+                    |
+                 Hungry?
+                    |
+         ----- No ----- Yes -----
+         |                      |
+===================   ====================
+= Yes No No No No =   =  Yes No Yes Yes  =
+===================   =    Yes No Yes    =
+                      ====================
+
+     Y:1  N:4               Y:5 N:2
+
+
+Remainder = 0.5 * ( - p(No, Yes)lg(No, Yes) - p(No, No)lg(No, No)
+                   - p(Yes, Yes)lg(Yes, Yes) - p(Yes, No)lg(Yes, No) )
+          = 0.5 ( - (1/5)lg(1/5) - (4/5)lg(4/5) - (5/7)lg(5/7) - (2/7)lg(2/7) )
+          = 0.5 ( - .464 - .258 - .347 - .516 )
+          = 0.5 ( 1.585 )
+          = 0.7925
+
+Gain(Hungry?) = starting entropy - remainder
+              = 1 - 0.7925
+              = 0.207
+
+This would be worse than asking the patrons question first because the gain from asking whether there are patrons
+was 0.54 bits, but it would be better than asking the type question because there was no gain from that question.
