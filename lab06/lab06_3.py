@@ -1,20 +1,21 @@
 import numpy as np
 from keras.datasets import boston_housing
 
+(train_data, train_labels), (test_data, test_labels) = boston_housing.load_data()
 
 def print_structures():
     print(
-        'training images \
+        'training data \
             \n\tcount: {} \
             \n\tdimensions: {} \
             \n\tshape: {} \
             \n\tdata type: {}\n\n'.format(
-            len(train_images),
-            train_images.ndim,
-            train_images.shape,
-            train_images.dtype
+            len(train_data),
+            train_data.ndim,
+            train_data.shape,
+            train_data.dtype
         ),
-        'testing images \
+        'testing data \
             \n\tcount: {} \
             \n\tdimensions: {} \
             \n\tshape: {} \
