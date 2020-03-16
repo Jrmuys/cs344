@@ -1,0 +1,52 @@
+We want the machine learned model to:
+Determine whether or not an email is important.
+
+Our ideal outcome is:
+The user is able to respond to emails that are important faster because they are labeled as
+such in their inbox.
+
+Our success metrics are:
+The user has a faster response time to important emails and doesn't miss any important
+emails.
+
+Our key results (KR) for the success metrics are:
+The user is able to respond to or see all of the important emails coming in to their inbox.
+
+Our ML model is deemed a failure if:
+The user misses emails that are important or the user ignores the important ag because
+too many non important emails are labeled as important.
+
+The output from our ML model will be:
+Whether or not the emails is important, a yes or no.
+
+The output is dened as:
+The flag that is put on the email, either important or nothing.
+
+The output from the ML model will be made:
+As soon as an email appears in the inbox, preferably without delaying the email arriving in
+the inbox.
+
+The outcome will be used for:
+Emails displayed in the inbox, there will be a ag or label on the email showing if it is
+important.
+
+Write how you would solve the problem if you didn't use ML. For example, what heuristics you
+might use.
+Find words that appear in important emails often like "urgent" and if those are prevalent,
+label it as important. The length of the email could indicate it's importance, or the person
+who sends it, or if a date appears in the email that is coming up soon, they could all
+indicate that the email is important.
+
+FORMULATING:
+Binary classification which predicts whether an emails is important or not.
+
+The data I want:
+Emails labeled by humans as important or not and all of the words and subject line of that email.
+
+Where the data comes from.
+A wide variety of different people, there could be a button when you send an email to label it as important
+so that everyone can participate in this data collection.
+
+Easily obtained inputs:
+The words in emails, the subject of the email, how long the email is, any dates included in the email
+
