@@ -1,0 +1,27 @@
+Categorical data is text based and describes the category something is in. The example given in the python notebook
+for the data set could be house styles, they don't have numbers involved. Numerical data is number based and can be
+a floating point number or an integer.
+
+train_model(
+    learning_rate=0.0001,
+    steps=500,
+    batch_size=3
+)
+
+Training model...
+...
+Final RMSE (on training data): 176.79
+
+train_model(
+    learning_rate=0.0001,
+    steps=500,
+    batch_size=3,
+    input_feature="population"
+)
+
+Training model...
+...
+Final RMSE (on training data): 180.47
+
+For the hyperparameters, there is not set algorithm although there are some good rules of thumb for finding good values.
+There are guidelines but there are not set rules that will always find the right values.

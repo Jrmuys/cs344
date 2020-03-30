@@ -1,0 +1,17 @@
+Excersize 1:
+cities['Saint name and wide'] = (cities['Area square miles'] > 50) & cities['City name'].apply(lambda name: name.startswith('San'))
+cities
+
+Excersize 2:
+
+
+cities.reindex([0,3,5,23])
+This allows for operations to be done on a data set even when it is not complete which can be the case with
+real world data.
+
+Pandas helps to abstract the data processing and helps to organize data to perform operations. It allows easy
+transformation, manipulation, and analysis of data more easily than using numpy and matplotlib and more individually.
+
+In case the data comes in ordered and you want to make sure the data analysis isn't biased by trends that happen over
+time in sequential order rather than in the data itself. It also makes sure the data is more representative of the
+whole because data at the start and end of the data set can be taken in equally.
