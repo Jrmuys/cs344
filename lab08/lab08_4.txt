@@ -1,0 +1,19 @@
+a.
+In this example, k-fold validation us used becasue of the low number of data points. Because the number of data points
+is so low, there is some chance that a different set of validation data will produce a significantly different error,
+known as variance. With k-fold validation, you split the data set up into partitions and train the data against each
+partition separately and average the scores to get a more accurate reading. This way you can validate the model works
+even with very little validation data.
+
+b.
+This is because data with wildly different ranges can have an effect on the model where the scale of the data is a
+factor. Normalizing the data means that they can all be evenly wheighted so the range of the data doesn't have a
+secondary effect on the model.
+
+c.
+Smaller datasets work better with smaller networks because with a large network, it can learn too much. For a small
+set, if the model is too large, the model can learn to "predict" all of the numbers in the data set so that it works
+perfectly for that data, but doesn't generalize to other data. To protect against overfitting, a smaller model can learn
+the trends in the data without overfitting, producing a more generalized model for the data.
+
+d.
