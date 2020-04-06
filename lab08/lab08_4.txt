@@ -17,3 +17,6 @@ perfectly for that data, but doesn't generalize to other data. To protect agains
 the trends in the data without overfitting, producing a more generalized model for the data.
 
 d.
+None of the configurations I tried made it better than the suggested archetecture. This could be because
+I didn't try the right combinations, but I think that the size of the network being small with relatively
+narrow layers means it is a pretty good architecture for the network.
