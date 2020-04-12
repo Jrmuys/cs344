@@ -1,0 +1,22 @@
+a. The linear regression was not effective for the problem. The solution only got slightly better as it trained
+so it does not work well.
+
+b. b. Logloss is better for classification because a highly predictive answer is given more wheight than a less
+confident answer, such as 0.999 vs 0.9 which have much different confidences. In L2 loss these would be treated
+similarly but in logloss, since it uses a logarithmic approach, it can distinguish between higher and lower confidence.
+
+c. Logistic regression was much more effective than linear regression. There was a noticeable decline in logloss
+error over the training session which shows that it was able to learn much better than linear regression was.
+
+d. linear_classifier = train_linear_classifier_model(
+    learning_rate=0.000005,
+    steps=10000,
+    batch_size=300,
+    training_examples=training_examples,
+    training_targets=training_targets,
+    validation_examples=validation_examples,
+    validation_targets=validation_targets)
+
+Model training finished.
+AUC on the validation set: 0.80
+Accuracy on the validation set: 0.79

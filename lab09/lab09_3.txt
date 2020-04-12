@@ -1,0 +1,5 @@
+I tried with only one hidden layer and it seemed to perform about the same as with two. I think this is because the
+network was suffering from overfitting which reducing the amound of hidden layers might help, while losing some
+of the network's ability to learn. Adding a layer made it worse which is consistent with overfitting.
+Reducing the amount of nodes to 8 made it worse but it did not suffer as much from overfitting. Adding more nodes
+suffered quite a bit from overfitting and didn't produce a better result.
