@@ -1,0 +1,11 @@
+a. The confusion matrix shows the actual and predicted for each of the labels, this shows if anything is being confused
+for something else, something that can happen with handwritten digits.
+
+b. The tensorflow network uses only 2 layers with 100 neurons each whereas the keras network used 3 layers with
+convolutions and max pooling. I got an imporved accuracy when reducing the neurons per layer and increasing the learning
+rate.
+
+c.
+The visualization for 10 steps is much more noisy than for 1000, it seems a lot more random. You can make out
+distinct shapes in the 1000 steps which suggests it is finding patterns to latch on to in the model.
+

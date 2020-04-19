@@ -1,0 +1,20 @@
+1. I would rather use Keras to build models because it is much easier to use than tensor flow. Keras also
+uses tensor flow, so you still get the functionality of tensor flow without havn't to write
+tensorflow code.
+
+2.
+dnn_regressor = train_nn_regression_model(
+    learning_rate=0.002,
+    steps=5000,
+    batch_size=100,
+    hidden_units=[10, 8],
+    training_examples=training_examples,
+    training_targets=training_targets,
+    validation_examples=validation_examples,
+    validation_targets=validation_targets)
+
+Final RMSE (on training data):   105.39
+Final RMSE (on validation data): 106.25
+
+Part 2:
+Final RMSE (on test data): 116.69

@@ -1,0 +1,42 @@
+a. AdaGrad adapts the learning rate for aech coefficient in the model which means the overall learning rate is lower.
+This makes the model train more efficiently.
+
+b. _ = train_nn_regression_model(
+    my_optimizer=tf.train.GradientDescentOptimizer(learning_rate=0.005),
+    steps=2000,
+    batch_size=50,
+    hidden_units=[10, 10],
+    training_examples=normalized_training_examples,
+    training_targets=training_targets,
+    validation_examples=normalized_validation_examples,
+    validation_targets=validation_targets)
+
+Final RMSE (on training data):   71.08
+Final RMSE (on validation data): 69.89
+
+_, adagrad_training_losses, adagrad_validation_losses = train_nn_regression_model(
+    my_optimizer=tf.train.AdagradOptimizer(learning_rate=0.6),
+    steps=500,
+    batch_size=100,
+    hidden_units=[10, 10],
+    training_examples=normalized_training_examples,
+    training_targets=training_targets,
+    validation_examples=normalized_validation_examples,
+    validation_targets=validation_targets)
+
+Final RMSE (on training data):   68.30
+Final RMSE (on validation data): 67.77
+
+
+_ = train_nn_regression_model(
+    my_optimizer=tf.train.GradientDescentOptimizer(learning_rate=0.0007),
+    steps=2000,
+    batch_size=700,
+    hidden_units=[10, 10],
+    training_examples=normalized_training_examples,
+    training_targets=training_targets,
+    validation_examples=normalized_validation_examples,
+    validation_targets=validation_targets)
+
+Final RMSE (on training data):   110.26
+Final RMSE (on validation data): 108.53

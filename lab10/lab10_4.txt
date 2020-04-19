@@ -1,0 +1,6 @@
+a. There are 1000 training and 500 validation images for both cats and dogs, and the images are 150x150 color images.
+
+b. The structure is the same with 3 conv2d layers with max pooling in between.
+
+c. It is interesting to see the features the network sees as significant. It seems to find the eyes and the shape of
+side of the face and the ear as important.
