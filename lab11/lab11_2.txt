@@ -1,0 +1,4 @@
+a. The first thing I noticed was the gender imbalance, as most of the entries are from men which suggests that the data is scewed toward men. This factor would likely effect the other categories at play. The capital gain and capital loss are also very high.
+b. I found that with x-axis binning by gender and coloring by income bracket, that comparatively fewer women were in the >50k income bracket than men.
+c.
+d. The model performs best for the "White" subgroup of race than "Black" or "Other" suggesting that the model is skewed toward white people rather than other minority races.
