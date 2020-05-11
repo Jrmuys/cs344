@@ -1,0 +1,16 @@
+on(a,b)
+on(b,c)
+supports(c,table)
+AX,y supports(X,Y) -> on(Y,X)
+AX,Y on(X,Y) -> above(X,Y)
+AX,Y,Z above(X,Y) ^ above(Y,Z) -> above(X,Z)
+
+Trying to prove that above(a,table)
+1. supports(c, table) -> on(c, table)
+2. on(c, table) -> above(c, table)
+3. on(b,c) -> above(b,c)
+4. on(a,b) -> above(a,b)
+5. above(c,table), above(b,c) -> above(b, table)
+6. above(b, table), above(a,b) -> above(a, table)
+
+above(a,table)
