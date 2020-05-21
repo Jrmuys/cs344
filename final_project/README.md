@@ -10,3 +10,5 @@ The code in implementation_1.py is based on the tutorial found [here](https://ma
 The database needed to train the networks can be found [here](https://www.kaggle.com/thomasqazwsxedc/alphabet-characters-fonts-dataset). It is referenced to be in the same folder as the code is run from.
 
 After the database is downloaded, the code should run. The training could take hours depending on the hardware it is being run on. Make sure you are using a GPU acceleration as it will greatly increase the speed of training. Using Google's Collabratory, it took around 3 hours to train implementation 1 and around 1.5 to train implementation 2. 
+
+The generate_new.py only works to generate new images based on implemenetaion 1. Put the file name of the model you wish to create more examples of instead of the one in place.
